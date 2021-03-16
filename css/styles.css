@@ -1,13 +1,169 @@
+/* general shit */
+
 html, body {
   scroll-behavior: smooth;
+  font-family: 'Inknut Antiqua', serif;
 }
 
+h2 {
+  font-size: 1.25em;
+}
 #content {
   height: 100%;
+  width: 100%;
   justify-content: center;
   align-content: center;
 }
 
+
+
+/* for links */
+
+@-webkit-keyframes to-white {
+  from {color:inherit;}
+  to {color: rgba(255,207,156,1);
+  background-color: black;}
+}
+@-o-keyframes to-white {
+  from {color:inherit;}
+  to {color: rgba(255,207,156,1);
+  background-color: black;}
+}
+@-moz-keyframes to-white {
+  from {color:inherit;}
+  to {color: rgba(255,207,156,1);
+  background-color: black;}
+}
+@keyframes to-white {
+  from {color:inherit;}
+  to {color: rgba(255,207,156,1);
+  background-color: black;}
+}
+.main-links {
+  display: block;
+  border: 1px solid black;
+  padding: 1%;
+  margin: 3%;
+  font-size: 1.25em;
+  text-decoration: none;
+  color: black;
+}
+.main-links:hover {
+  animation-name: to-white;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+#music-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#archive-link {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#writing-link {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#web-link {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
+
+/*Main Divs of Scroll*/
+
+/* div {
+  border: 1px dotted black;
+} */
+
+.page-divisions {
+  min-height: 950px;
+  display: flex;
+}
+
+.content-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.image-box {
+  max-width: 30%;
+  margin-bottom: 10vh;
+}
+.image-box img {
+  width: 100%;
+}
+.text-box {
+  max-width: 40%;
+  margin-left: 5vw;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+#typwriter h1 {
+  flex-basis: 100%;
+  text-align: center;
+  position: sticky;
+}
+#typewriter img {
+  max-width: 40px;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+#main-info {
+    background-color: rgba(255,207,156,1);
+
+}
+#music {
+  background: linear-gradient(0deg, rgba(255,156,164,1) 0%, rgba(255,206,156,1) 100%);
+}
+#archives {
+  background: linear-gradient(0deg, rgba(216,156,255,1) 0%, rgba(255,156,164,1) 100%);
+}
+#writing {
+  background: linear-gradient(0deg, rgba(156,187,255,1) 0%, rgba(216,156,255,1) 100%);
+}
+#web {
+  background: linear-gradient(0deg, rgba(156,255,226,1) 0%, rgba(156,187,255,1) 100%);
+}
+
+
+
+
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* Unused typewriter CSS */
+.typer {
+  display: none;
+}
+/*
 #typewriter {
   padding: 15% 10% 15% 10%;
   width: 80%;
@@ -34,38 +190,4 @@ html, body {
 }
 #typewriter-paper {
   background-color: rgba(255,207,156,1)
-}
-#music {
-  background: linear-gradient(0deg, rgba(255,156,164,1) 0%, rgba(255,206,156,1) 100%);
-}
-#archives {
-  background: linear-gradient(0deg, rgba(216,156,255,1) 0%, rgba(255,156,164,1) 100%);
-}
-#writing {
-  background: linear-gradient(0deg, rgba(156,187,255,1) 0%, rgba(216,156,255,1) 100%);
-}
-#web {
-  background: linear-gradient(0deg, rgba(156,255,226,1) 0%, rgba(156,187,255,1) 100%);
-}
-.main-links {
-  display: block;
-  margin: 15px 0 15px 0;
-  font-size: 1.5em;
-}
-
-
-.typer {
-  display: none;
-}
-
-
-footer {
-  position: fixed;
-  bottom: 0;
-  margin-left: 40%;
-  margin-right: 40%;
-}
-
-.hidden {
-  display: none;
-}
+} */

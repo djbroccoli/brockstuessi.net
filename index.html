@@ -15,8 +15,12 @@
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="js/app2.js" defer></script>
-  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+  <script src="js/typewriter.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
   </head>
 
 <body>
@@ -25,22 +29,84 @@
   <a href="#archives" id="archive-link" class="main-links">Archival Work</a>
   <a href="#writing" id="writing-link" class="main-links">Writing</a>
   <a href="#web" id="web-link" class="main-links">Web Projects</a>
-      <div id="music" class="sections">
+      <div id="main-info" class="page-divisions">
+        <div id="typewriter" class="content-box">
+          <!-- <h1>Brock Stuessi</h2> -->
+          <!-- <div class="image-box">
+          <img src="imgs/hungry-badger.png" alt="a picture of brock in hungry badger tshirt">
+        </div>
+        <div class="text-box">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec enim vitae ipsum lobortis vehicula non a ex. Maecenas finibus venenatis turpis et ornare. Phasellus in consectetur eros, a pharetra massa. Mauris aliquet ligula nulla, eu egestas ante accumsan quis. Proin egestas bibendum tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec enim vitae ipsum lobortis vehicula non a ex. Maecenas finibus venenatis turpis et ornare. Phasellus in consectetur eros, a pharetra massa. Mauris aliquet ligula nulla, eu egestas ante accumsan quis. Proin egestas bibendum tempus. </p> -->
+        </div>
+        </div>
+      </div>
+      <div id="music" class="page-divisions">
+        <div class="content-box">
+          <div class="image-box" data-aos="fade-up-right">
+            <img src="imgs/hungry-badger.png" >
+          </div>
+          <div class="text-box" data-aos="fade-up-left">
+            <a href="https://hungrybadger.bandcamp.com/music" target="blank"><h2>HUNGRY BADGER RECORDS</h2></a>
+            <p>I started hungry badger records in 2020 to release music from my multiple projects and friends in an equitable and transparent way.</p>
+          </div>
+          <div class="image-box" data-aos="fade-up-right">
+            <img src="https://f4.bcbits.com/img/a0012487602_16.jpg" >
+          </div>
+          <div class="text-box" data-aos="fade-up-left">
+            <a href="https://forestwilson.bandcamp.com/album/scout" target="blank"><h2>SCOUT</h2></a>
+            <p>mix, master, bass playing, artwork, CD & cassette production</p>
+          </div>
+          <div class="image-box" data-aos="fade-up-right">
+            <img src="https://f4.bcbits.com/img/a2110046736_16.jpg" >
+          </div>
+          <div class="text-box" data-aos="fade-up-left">
+            <a href="https://carrollriggenstuessi.bandcamp.com/album/boomerang" target="blank"><h2>BOOMERANG</h2></a>
+            <p>mix, master, bass playing, artwork, CD cassette production</p>
+          </div>
+        </div>
 
-      </div><!--
-      --><div id="archives" class="sections">
+      </div>
+      <div id="archives" class="page-divisions">
+        <div class="content-box">
+          <div class="image-box">
 
-      </div><!--
-      --><div id="writing" class="sections">
+          </div>
+          <div class="text-box">
 
-      </div><!--
-      --><div id="web" class="sections">
+          </div>
+        </div>
+      </div>
+      <div id="writing" class="page-divisions">
+        <div class="content-box">
+          <div class="image-box">
 
+          </div>
+          <div class="text-box">
+
+          </div>
+        </div>
+      </div>
+      <div id="web" class="page-divisions">
+        <div class="content-box">
+          <div class="image-box">
+
+          </div>
+          <div class="text-box">
+
+          </div>
+        </div>
       </div>
 
   </div>
 <footer>
   <!--<p>website created by brock stuessi</p>-->
 </footer>
+<script>
+  AOS.init({
+    disable: 'phone',
+    delay: 200,
+    duration: 600,
+  });
+</script>
 </body>
 </html>
