@@ -8,3 +8,12 @@ $(document).ready(function(){
 
 
 })
+
+{
+  $(".text-box").hover(function(){
+    $(this).find("p").toggleClass("hidden");
+  })
+
+
+
+}
