@@ -90,7 +90,6 @@ h2 {
 } */
 
 .page-divisions {
-  min-height: 950px;
   display: flex;
   padding-top: 150px;
 }
@@ -131,7 +130,6 @@ h2 {
 
 .text-box a:hover {
     mix-blend-mode: color-burn;
-    font-size: 1.05em;
   }
 
 .text-box p {
@@ -181,18 +179,12 @@ h2 {
 #web {
   background: linear-gradient(0deg, rgba(156,255,226,1) 0%, rgba(156,187,255,1) 100%);
 }
-
-
-
-
-
-
-footer {
-  position: absolute;
-  bottom: 0;
-  margin-left: 40%;
-  margin-right: 40%;
+#footer {
+  background-color: rgba(156,255,226,1);
+  padding-top: 30px;
 }
+
+
 
 .hidden {
   opacity: 0;
