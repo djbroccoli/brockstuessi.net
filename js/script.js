@@ -2,9 +2,14 @@
 //Date: 2/12/2020
 
 {
-  $(".text-box").hover(function(){
-    $(this).find("p").toggleClass("hidden");
-  })
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    $(".text-box p").toggleClass("hidden");
+  }
+  else {
+    $(".text-box").hover(function(){
+      $(this).find("p").toggleClass("hidden");
+    })
+}
 
 
 }
@@ -22,13 +27,11 @@
     //if intersecting, change the color to black
     if (entries[0].isIntersecting) {
 
-      $(target).css({"color": "rgba(255,207,156,1)",
-      "background-color": "black"});
+      $(target).addClass("link-header");
     }
     //change link back to transparent if not intersecting
     else {
-      $(target).css({"color": "black",
-      "background-color": "transparent"});
+      $(target).removeClass("link-header");
     }
   };
 

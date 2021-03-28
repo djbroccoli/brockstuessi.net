@@ -76,8 +76,11 @@ h2 {
   right: 0;
 }
 
-
-
+.link-header {
+  color: rgba(255,207,156,1);
+  background-color: black;
+  /* box-shadow: 5px 10px 30px 10px black; */
+}
 
 
 /*Main Divs of Scroll*/
@@ -89,6 +92,7 @@ h2 {
 .page-divisions {
   min-height: 950px;
   display: flex;
+  padding-top: 150px;
 }
 
 .content-box {
@@ -99,6 +103,8 @@ h2 {
   align-items: center;
   flex-flow: row wrap;
 }
+
+
 .image-box {
   max-width: 30%;
   margin-bottom: 10vh;
@@ -122,13 +128,28 @@ h2 {
             transition: all .5s;
 
 }
+
 .text-box a:hover {
-  mix-blend-mode: color-burn;
-  font-size: 1.05em;
-}
+    mix-blend-mode: color-burn;
+    font-size: 1.05em;
+  }
 
 .text-box p {
   transition: opacity 0.5s;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .image-box {
+    display: none;
+  }
+  .content-box {
+    width: 99%;
+    flex-flow: column nowrap;
+  }
+  .text-box {
+    width: 100%;
+  }
 }
 
 

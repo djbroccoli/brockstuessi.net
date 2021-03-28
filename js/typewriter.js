@@ -15,7 +15,6 @@ var typewriter = new Typewriter(paper, {
  onCreateTextNode: customNodeCreator,
  wrapperClassName: "typedText",
  cursorClassName: "typer",
-
 });
 
 
