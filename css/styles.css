@@ -41,12 +41,12 @@ h2 {
 }
 .main-links {
   display: block;
-  border: 1px solid black;
   padding: 1%;
   margin: 3%;
   font-size: 1.25em;
   text-decoration: none;
   color: black;
+  transition: all .5s;
 }
 .main-links:hover {
   animation-name: to-white;
@@ -59,7 +59,7 @@ h2 {
   left: 0;
 }
 
-#archive-link {
+#archives-link {
   position: fixed;
   top: 0;
   right: 0;
@@ -112,10 +112,25 @@ h2 {
   text-align: center;
   margin-bottom: 10vh;
 }
+.text-box a{
+  display: inline-block;
+  mix-blend-mode: difference;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+
+}
+.text-box a:hover {
+  mix-blend-mode: color-burn;
+  font-size: 1.05em;
+}
 
 .text-box p {
   transition: opacity 0.5s;
 }
+
 
 
 #typwriter h1 {
