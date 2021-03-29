@@ -36,11 +36,32 @@
   };
 
   const observer = new IntersectionObserver(headerChanger, {
-    threshold: 0.5,
+    threshold: 0.4,
   });
 
   observer.observe(MUSIC);
   observer.observe(ARCHIVES);
   observer.observe(WRITING);
   observer.observe(WEB);
+}
+{
+  const TITLE =  document.getElementById("main-info");
+
+  const addHeader = function(entries) {
+    if (!entries[0].isIntersecting) {
+
+      $("#main-link").removeClass("hidden");
+    }
+    //change link back to transparent if not intersecting
+    else {
+      $("#main-link").addClass("hidden");
+    }
+  }
+  const observer = new IntersectionObserver(addHeader, {
+    threshold: 0.5,
+  });
+
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    observer.observe(TITLE);
+  }
 }

@@ -76,6 +76,21 @@ h2 {
   right: 0;
 }
 
+#main-link {
+  display: block;
+  padding: 1%;
+  margin: 3% 3% 3% 0;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s;
+  z-index: 1;
+}
+
 .link-header {
   color: rgba(255,207,156,1);
   background-color: black;
@@ -90,6 +105,7 @@ h2 {
 } */
 
 .page-divisions {
+  min-height: 700px;
   display: flex;
   padding-top: 150px;
 }
@@ -146,7 +162,7 @@ h2 {
     flex-flow: column nowrap;
   }
   .text-box {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -165,6 +181,7 @@ h2 {
 
 #main-info {
     background-color: rgba(255,207,156,1);
+    padding-top: 0;
 
 }
 #music {
@@ -191,11 +208,30 @@ h2 {
 }
 
 
-
+/*Mobile Style*/
+@media only screen and (max-width: 768px) {
+  .image-box {
+    display: none;
+  }
+  .content-box {
+    width: 99%;
+    flex-flow: column nowrap;
+  }
+  .text-box {
+    width: 100%;
+  }
+  #main-link {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+  }
+}
 /* Unused typewriter CSS */
 .typer {
   display: none;
 }
+
+
 /*
 #typewriter {
   padding: 15% 10% 15% 10%;
