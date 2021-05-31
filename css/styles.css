@@ -15,7 +15,10 @@ h2 {
   align-content: center;
 }
 
-
+#title {
+  text-align: center;
+  margin: 10px;
+}
 
 /* for links */
 
@@ -107,7 +110,7 @@ h2 {
 .page-divisions {
   min-height: 700px;
   display: flex;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
 .content-box {
@@ -153,22 +156,8 @@ h2 {
 }
 
 
-@media only screen and (max-width: 768px) {
-  .image-box {
-    display: none;
-  }
-  .content-box {
-    width: 99%;
-    flex-flow: column nowrap;
-  }
-  .text-box {
-    max-width: 100%;
-  }
-}
 
-
-
-#typwriter h1 {
+#typewriter h1 {
   flex-basis: 100%;
   text-align: center;
   position: sticky;
@@ -218,12 +207,18 @@ h2 {
     flex-flow: column nowrap;
   }
   .text-box {
-    width: 100%;
+    max-width: 100%;
   }
   #main-link {
     margin-top: 10%;
     width: 100%;
     text-align: center;
+  }
+  .text-box a {
+    mix-blend-mode: normal;
+    color: black;
+    text-decoration: underline;
+    display: initial;
   }
 }
 /* Unused typewriter CSS */
