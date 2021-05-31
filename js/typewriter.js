@@ -22,7 +22,7 @@ typewriter.typeString("<h1>Brock Stuessi</h1>")
 .pauseFor(300)
 .typeString("<a href='mailto:brock@warpmail.net'><img src='imgs/email.png'></a>")
 .pauseFor(300)
-.typeString("<a href='imgs/stuessi-CV.pdf' target='blank'><img src='imgs/cv.png'>")
+.typeString("<a href='imgs/Stuessi-CV.pdf' target='blank'><img src='imgs/cv.png'>")
 .pauseFor(300)
 .typeString("<a href='https://github.com/djbroccoli' target='blank'><img src='imgs/github.png'>")
 .start();
